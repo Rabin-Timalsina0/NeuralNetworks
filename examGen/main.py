@@ -3,6 +3,7 @@ import json
 from dotenv import load_dotenv
 import os
 
+#client = OpenAI(**Use openai api key**)
 
 curriculum_payload = {
   "subject": "Physics",
@@ -54,3 +55,4 @@ Fill the empty fields in the JSON below WITHOUT changing structure.
 
 print(completion.choices[0].message.content)
 
+#returns the same playload with fulfilled parameters
