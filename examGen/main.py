@@ -3,9 +3,6 @@ import json
 from dotenv import load_dotenv
 import os
 
-load_dotenv(".env")
-
-client = OpenAI(api_key=os.getenv("API_KEY"))
 
 curriculum_payload = {
   "subject": "Physics",
@@ -30,8 +27,8 @@ curriculum_payload = {
 
 completion = client.chat.completions.create(
     model="gpt-4.1-nano",
-    temperature=0.2,
-    response_format={"type": "json_object"},  # ✅ SUPPORTED HERE
+    temperature=0.2,  #Lower temperature makes more predictable results
+    response_format={"type": "json_object"},
     messages=[
         {
             "role": "system",
