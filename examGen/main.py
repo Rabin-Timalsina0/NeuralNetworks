@@ -47,7 +47,7 @@ STRICT RULES:
 Generate NEB style questions.
 Fill the empty fields in the JSON below WITHOUT changing structure.
 
-{json.dumps(curriculum_payload)}
+{json.dumps(curriculum_payload)}  #using the pre made json
 """
         }
     ]
