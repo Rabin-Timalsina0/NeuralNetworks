@@ -56,3 +56,4 @@ Fill the empty fields in the JSON below WITHOUT changing structure.
 print(completion.choices[0].message.content)
 
 #returns the same playload with fulfilled parameters
+#Meta llama is the fast model although its free from groq
